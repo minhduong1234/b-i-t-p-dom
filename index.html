@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type=" text" id="số1">
+    <input type=" text" id="số2">
+    <button onclick="Addition()">Addition(+)</button>
+    <button onclick="Subtraction ()">Subtraction(-)</button>
+    <button onclick="Multiplication ()">Multiplication(*)</button>
+    <button onclick="Division ()">Division(/)</button>
+    <p>kết quả là:</p>
+    <p id="kq"></p>
+    <Script>
+        function Addition() {
+            let a = +document.getElementById('số1').value;
+            let b = +document.getElementById('số2').value;
+            document.getElementById('kq').innerHTML= a+b;
+        }
+        function Subtraction() {
+            let a = +document.getElementById('số1').value;
+            let b = +document.getElementById('số2').value;
+            document.getElementById('kq').innerHTML= a-b;
+        }
+        function Multiplication() {
+            let a = +document.getElementById('số1').value;
+            let b = +document.getElementById('số2').value;
+            document.getElementById('kq').innerHTML= a*b
+        }
+        function Division() {
+            let a = +document.getElementById('số1').value;
+            let b = +document.getElementById('số2').value;
+            document.getElementById('kq').innerHTML= a/b
+        }
+    </Script>
+
+
+</body>
+</html>
